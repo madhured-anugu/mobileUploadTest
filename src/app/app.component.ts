@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mobile-upload';
+
+  file: File = null;
+
+    onChange(event) { 
+    this.file = event.target.files[0]; 
+    debugger;
+   } 
+
+
 }
